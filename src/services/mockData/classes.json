@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "batchName": "JEE Advanced 2024",
+    "subject": "Physics & Mathematics",
+    "teacherId": "T001",
+    "timing": "09:00 AM - 12:00 PM",
+    "days": ["Monday", "Wednesday", "Friday"],
+    "roomNumber": "A101",
+    "maxStudents": 30
+  },
+  {
+    "id": "2",
+    "batchName": "NEET Biology Intensive",
+    "subject": "Biology & Chemistry",
+    "teacherId": "T002",
+    "timing": "02:00 PM - 05:00 PM",
+    "days": ["Tuesday", "Thursday", "Saturday"],
+    "roomNumber": "B205",
+    "maxStudents": 25
+  },
+  {
+    "id": "3",
+    "batchName": "Class 12 Board Prep",
+    "subject": "All Subjects",
+    "teacherId": "T003",
+    "timing": "06:00 PM - 09:00 PM",
+    "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "roomNumber": "C301",
+    "maxStudents": 35
+  },
+  {
+    "id": "4",
+    "batchName": "Crash Course Mathematics",
+    "subject": "Mathematics",
+    "teacherId": "T004",
+    "timing": "10:00 AM - 01:00 PM",
+    "days": ["Saturday", "Sunday"],
+    "roomNumber": "A102",
+    "maxStudents": 20
+  },
+  {
+    "id": "5",
+    "batchName": "Foundation Course Science",
+    "subject": "Science Foundation",
+    "teacherId": "T005",
+    "timing": "04:00 PM - 06:00 PM",
+    "days": ["Monday", "Wednesday", "Friday"],
+    "roomNumber": "B104",
+    "maxStudents": 40
+  }
+]

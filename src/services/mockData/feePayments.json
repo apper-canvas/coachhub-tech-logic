@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "studentId": "1",
+    "amount": 15000,
+    "paymentDate": "2024-01-15",
+    "paymentMode": "online",
+    "receiptNumber": "RCP001"
+  },
+  {
+    "id": "2",
+    "studentId": "2",
+    "amount": 10000,
+    "paymentDate": "2024-01-20",
+    "paymentMode": "cash",
+    "receiptNumber": "RCP002"
+  },
+  {
+    "id": "3",
+    "studentId": "3",
+    "amount": 12000,
+    "paymentDate": "2024-02-01",
+    "paymentMode": "online",
+    "receiptNumber": "RCP003"
+  },
+  {
+    "id": "4",
+    "studentId": "4",
+    "amount": 6000,
+    "paymentDate": "2024-02-05",
+    "paymentMode": "cash",
+    "receiptNumber": "RCP004"
+  },
+  {
+    "id": "5",
+    "studentId": "5",
+    "amount": 18000,
+    "paymentDate": "2024-01-10",
+    "paymentMode": "online",
+    "receiptNumber": "RCP005"
+  },
+  {
+    "id": "6",
+    "studentId": "6",
+    "amount": 9000,
+    "paymentDate": "2024-01-25",
+    "paymentMode": "cash",
+    "receiptNumber": "RCP006"
+  }
+]

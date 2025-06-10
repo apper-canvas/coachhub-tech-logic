@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "name": "Arjun Sharma",
+    "phone": "+91 9876543210",
+    "email": "arjun.sharma@email.com",
+    "batchId": "1",
+    "enrollmentDate": "2024-01-15",
+    "feeStatus": "paid",
+    "totalFees": 15000,
+    "paidAmount": 15000
+  },
+  {
+    "id": "2",
+    "name": "Priya Gupta",
+    "phone": "+91 9876543211",
+    "email": "priya.gupta@email.com",
+    "batchId": "1",
+    "enrollmentDate": "2024-01-20",
+    "feeStatus": "pending",
+    "totalFees": 15000,
+    "paidAmount": 10000
+  },
+  {
+    "id": "3",
+    "name": "Rohit Verma",
+    "phone": "+91 9876543212",
+    "email": "rohit.verma@email.com",
+    "batchId": "2",
+    "enrollmentDate": "2024-02-01",
+    "feeStatus": "paid",
+    "totalFees": 12000,
+    "paidAmount": 12000
+  },
+  {
+    "id": "4",
+    "name": "Sneha Patel",
+    "phone": "+91 9876543213",
+    "email": "sneha.patel@email.com",
+    "batchId": "2",
+    "enrollmentDate": "2024-02-05",
+    "feeStatus": "pending",
+    "totalFees": 12000,
+    "paidAmount": 6000
+  },
+  {
+    "id": "5",
+    "name": "Amit Kumar",
+    "phone": "+91 9876543214",
+    "email": "amit.kumar@email.com",
+    "batchId": "3",
+    "enrollmentDate": "2024-01-10",
+    "feeStatus": "paid",
+    "totalFees": 18000,
+    "paidAmount": 18000
+  },
+  {
+    "id": "6",
+    "name": "Kavya Singh",
+    "phone": "+91 9876543215",
+    "email": "kavya.singh@email.com",
+    "batchId": "3",
+    "enrollmentDate": "2024-01-25",
+    "feeStatus": "pending",
+    "totalFees": 18000,
+    "paidAmount": 9000
+  }
+]
