@@ -88,23 +88,23 @@ const StudentsPage = () => {
     }
   };
 
-  return (
-    &lt;div className="space-y-6 max-w-full overflow-hidden"&gt;
-      &lt;PageHeader
+return (
+    <div className="space-y-6 max-w-full overflow-hidden">
+      <PageHeader
         title="Students"
         subtitle="Manage student enrollment and information"
         actionButton={
-          &lt;Button
+          <Button
             onClick={() => setShowAddForm(true)}
             className="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors flex items-center"
-          &gt;
-            &lt;ApperIcon name="UserPlus" size={16} className="mr-2" /&gt;
+          >
+            <ApperIcon name="UserPlus" size={16} className="mr-2" />
             Add Student
-          &lt;/Button&gt;
+          </Button>
         }
-      /&gt;
+      />
 
-      &lt;StudentsListDisplay
+      <StudentsListDisplay
         students={students}
         classes={classes}
         searchTerm={searchTerm}
@@ -115,23 +115,23 @@ const StudentsPage = () => {
         onToggleFeeStatus={updateFeeStatus}
         onAddStudentClick={() => setShowAddForm(true)}
         loading={loading}
-      /&gt;
+      />
 
-      &lt;ModalContainer
+      <ModalContainer
         isOpen={showAddForm}
         onClose={() => setShowAddForm(false)}
         title="Add New Student"
-      &gt;
-        &lt;AddStudentForm
+      >
+        <AddStudentForm
           formData={formData}
           setFormData={setFormData}
           classes={classes}
           handleSubmit={handleAddStudent}
           onCancel={() => setShowAddForm(false)}
           loading={loading}
-        /&gt;
-      &lt;/ModalContainer&gt;
-    &lt;/div&gt;
+        />
+      </ModalContainer>
+    </div>
   );
 };
 
