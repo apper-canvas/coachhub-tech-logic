@@ -1,8 +1,9 @@
-import Dashboard from '../pages/Dashboard';
-import Students from '../pages/Students';
-import Classes from '../pages/Classes';
-import Attendance from '../pages/Attendance';
-import Fees from '../pages/Fees';
+import HomePage from '@/components/pages/HomePage';
+import DashboardPage from '@/components/pages/DashboardPage';
+import StudentsPage from '@/components/pages/StudentsPage';
+import ClassesPage from '@/components/pages/ClassesPage';
+import AttendancePage from '@/components/pages/AttendancePage';
+import FeesPage from '@/components/pages/FeesPage';
 
 export const routes = {
   dashboard: {
@@ -10,35 +11,42 @@ export const routes = {
     label: 'Dashboard',
     path: '/',
     icon: 'LayoutDashboard',
-    component: Dashboard
+component: DashboardPage
+  },
+  home: {
+    id: 'home',
+    label: 'Home (Redirect)',
+    path: '/home',
+    icon: 'Home',
+    component: HomePage
   },
   students: {
     id: 'students',
     label: 'Students',
     path: '/students',
     icon: 'Users',
-    component: Students
+    component: StudentsPage
   },
   classes: {
     id: 'classes',
     label: 'Classes',
     path: '/classes',
     icon: 'BookOpen',
-    component: Classes
+    component: ClassesPage
   },
   attendance: {
     id: 'attendance',
     label: 'Attendance',
     path: '/attendance',
     icon: 'UserCheck',
-    component: Attendance
+    component: AttendancePage
   },
   fees: {
     id: 'fees',
     label: 'Fees',
     path: '/fees',
     icon: 'CreditCard',
-    component: Fees
+    component: FeesPage
   }
 };
 
