@@ -69,16 +69,16 @@ const AttendancePage = () => {
         return students.filter(student => student.batchId === selectedClass);
     };
 
-    const getAttendanceStatus = (studentId) => {
+const getAttendanceStatus = (studentId) => {
         const record = attendanceRecords.find(r =>
-            r.studentId === studentId &amp;&amp; r.date === selectedDate
+            r.studentId === studentId && r.date === selectedDate
         );
         return record ? record.status : null;
     };
 
     const getAttendanceCount = (status) => {
         return attendanceRecords.filter(r =>
-            r.date === selectedDate &amp;&amp; r.status === status
+            r.date === selectedDate && r.status === status
         ).length;
     };
 
@@ -86,46 +86,46 @@ const AttendancePage = () => {
     const classStudents = getClassStudents();
 
     return (
-        &lt;div className="space-y-6 max-w-full overflow-hidden"&gt;
-            &lt;PageHeader
+        <div className="space-y-6 max-w-full overflow-hidden">
+            <PageHeader
                 title="Attendance"
                 subtitle="Track and manage student attendance records"
-            /&gt;
+            />
 
-            &lt;AttendanceFiltersSection
+            <AttendanceFiltersSection
                 classes={classes}
                 selectedClass={selectedClass}
                 onClassChange={(e) => setSelectedClass(e.target.value)}
                 selectedDate={selectedDate}
                 onDateChange={(e) => setSelectedDate(e.target.value)}
-            /&gt;
+            />
 
             {selectedClass ? (
-                &lt;&gt;
-                    &lt;AttendanceSummarySection
+                <>
+                    <AttendanceSummarySection
                         classStudentsLength={classStudents.length}
                         presentCount={getAttendanceCount('present')}
                         absentCount={getAttendanceCount('absent')}
                         lateCount={getAttendanceCount('late')}
                         attendanceStats={attendanceStats}
                         selectedClassData={selectedClassData}
-                    /&gt;
+                    />
 
-                    &lt;StudentAttendanceList
+                    <StudentAttendanceList
                         classStudents={classStudents}
                         getAttendanceStatus={getAttendanceStatus}
                         selectedDate={selectedDate}
                         loading={loading}
-                    /&gt;
-                &lt;/&gt;
+                    />
+                </>
             ) : (
-                &lt;EmptyState
+                <EmptyState
                     icon="UserCheck"
                     title="Select a class to view attendance"
                     message="Choose a class from the dropdown above to manage attendance records"
-                /&gt;
+                />
             )}
-        &lt;/div&gt;
+        </div>
     );
 };
 
